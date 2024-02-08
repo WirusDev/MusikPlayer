@@ -41,7 +41,7 @@ const Welcome = () => {
   }, [userContext.details, fetchUserDetails]);
 
   return userContext.details === null ? (
-    "Error Loading User details!"
+    "Error Loading User details."
   ) : !userContext.details ? (
     <Loader />
   ) : (
