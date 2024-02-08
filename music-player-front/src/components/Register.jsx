@@ -36,7 +36,7 @@ const Register = () => {
           if (response.status === 400) {
             setError("Please fill all the fields correctly!");
           } else if (response.status === 401) {
-            setError("Invalid email and password combination.");
+            setError("Invalid email and password combination!");
           } else if (response.status === 500) {
             console.log(response);
             const data = await response.json();
