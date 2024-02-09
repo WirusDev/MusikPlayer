@@ -1,0 +1,127 @@
+
+.MusikPlayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: auto;
+    color: white;
+  
+}
+
+
+
+.musicCover{
+ 
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0px 0px 9px 2px rgba(255,51,69,0.39); 
+    box-shadow: 0px 0px 9px 2px rgba(255,51,69,0.39);
+}
+
+.songNames{
+    font-size: var(--font-size-200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 10px;
+}
+.title{
+    font-size: var(--font-size-300);
+    margin: 5px;
+}
+.subTitle{
+    font-size: var(--font-size-100);
+  
+}
+
+
+.playButton{
+    background-color: var(----background);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+}
+.playButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+.playButtons button:hover{
+   
+        cursor: pointer;
+  
+}
+
+.time{
+    display: flex; 
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* #music-bar{
+
+    width: 240px;
+    margin-bottom: 1.5rem;
+    height: 2.5px;
+    border-radius: 0;
+    transition: all 0.3s ease;
+} */
+
+#music-bar{
+
+}
+
+
+/* Chrome
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 220px;
+      -webkit-appearance: none;
+      background-color: var(--color-gray-100);
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: var(--accent);
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 5px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #434343;
+      box-shadow: -80px 0 0 80px var(--accent);
+    }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: var(--accent); 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: var(--color-gray-100);
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: var(--accent); 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: var(--color-gray-100);
+}  */

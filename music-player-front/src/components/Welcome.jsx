@@ -3,6 +3,7 @@ import { useCallback, useContext, useEffect } from "react";
 import { UserContext } from "../context/UserContext";
 import Loader from "./Loader";
 import SimpleMenu from "./menu";
+import Player from "./Player";
 
 const Welcome = () => {
   const [userContext, setUserContext] = useContext(UserContext);
@@ -53,9 +54,7 @@ const Welcome = () => {
         <SimpleMenu />
       </div>
       <Card elevation='1' className='mainCard'>
-        <>
-          <p> Space for player </p>
-        </>
+        <Player />
       </Card>
     </>
   );

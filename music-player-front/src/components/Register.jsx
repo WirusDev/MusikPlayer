@@ -52,6 +52,7 @@ const Register = () => {
           });
         }
       })
+      // eslint-disable-next-line no-unused-vars
       .catch((error) => {
         setIsSubmitting(false);
         setError(genericErrorMessage);
